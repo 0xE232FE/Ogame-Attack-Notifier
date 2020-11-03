@@ -3,7 +3,7 @@ var interval = 0;
 var planetLinkList = [];
 var timer;
 
-var minTime = 5;
+var minTime = 1;
 var maxTime = 10;
 
 (function() {
@@ -30,7 +30,7 @@ var maxTime = 10;
 /**
  * Contacts the SMS API and creates new SMS request
  */
-function sendMessage(){
+function sendSMS(){
     var url = "https://miltonalexandre-cardoso.outsystemscloud.com/SMSSender/rest/v1/SendSMS/934184517/QkuCIKh0F1ZoH3Pe4YVOAoNcL";
 
     $.ajax({ type: "GET",   

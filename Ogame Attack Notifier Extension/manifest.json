@@ -9,8 +9,18 @@
 			   "128": "128.png"
 	},
 	"permissions": [
-		"storage"
+		"storage",
+		"activeTab"
 	],
+	"background": {
+		"scripts": ["js/background.js"],
+		"persistent": false
+	},
+	"browser_action": {
+		"default_title": "Set this page's color.",
+		"default_icon": "16.png",
+		"default_popup": "popup.html"
+	},
 	"content_scripts": [
 		{
 			"matches":[ "https://*.ogame.gameforge.com/game/index.php?page=*" ],
