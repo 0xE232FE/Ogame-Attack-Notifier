@@ -31,7 +31,7 @@ var maxTime = 10;
  * Contacts the SMS API and creates new SMS request
  */
 function sendMessage(){
-    var url = "https://miltonalexandre-cardoso.outsystemscloud.com/SMSSender/rest/v1/SendSMS/934184517/QkuCIKh0F1ZoH3Pe4YVOAoNcL";
+    var url = "https://miltonalexandre-cardoso.outsystemscloud.com/SMSSender/rest/v1/SendSMS/<number>/<apiKey>";
 
     $.ajax({ type: "GET",   
         url: url,   
